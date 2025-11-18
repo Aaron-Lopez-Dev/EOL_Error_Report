@@ -1,11 +1,11 @@
-CREATE A PYTHON VIRTUAL ENVIORNMENT
+##CREATE A PYTHON VIRTUAL ENVIORNMENT
 
-python3 -m venv venv
+`python3 -m venv venv`
 
-ACTIVATE VIRTUAL ENVIORNMENT
+##ACTIVATE VIRTUAL ENVIORNMENT
 
-source venv/bin/activate
+`source venv/bin/activate`
 
-RUN MAIN.PY 
+##RUN MAIN.PY 
 
-python3 ./main.py
+`python3 ./main.py`
