@@ -21,7 +21,7 @@ def checkTorqueValues():
         print("All VINs Created Successfully\n")
         print(json.dumps(globals.completedCarsUnfused, indent=4))
     else:
-        print("EOL Report | VINs NEED ATTENTION") 
+        print("\nEOL Report | VINs NEED ATTENTION\n") 
         print(json.dumps(globals.completedCarsWithErrors, indent=4))
 
     importToDB.createDatabase()
