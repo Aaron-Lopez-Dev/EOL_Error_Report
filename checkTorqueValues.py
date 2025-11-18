@@ -4,6 +4,7 @@ import json, globals, importToDB
 def checkTorqueValues():
     vehicles = globals.completedCarsUnfused
     failures = False
+    
     for vin, data in vehicles.items():
         appliedTorque = data["torqueValues"]
 
