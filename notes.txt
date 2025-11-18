@@ -1,0 +1,6 @@
+when in SQLite
+
+.headers on
+.mode column
+
+SELECT * FROM vehicles;
