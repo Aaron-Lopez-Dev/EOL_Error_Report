@@ -1,3 +1,3 @@
 completedCarsUnfused = {}
 completedCarsWithErrors = {}
-bugValues = [.18, .18, .18, .18, .32]
+bugValues = [.18, .18, .18, .18, .32, .18, .18, .18, .18, .18, .18, .18]

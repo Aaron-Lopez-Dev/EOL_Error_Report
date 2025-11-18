@@ -1,4 +1,4 @@
-# EOL Error Report:
+# **EOL Error Report:**
 
 ### Main purpose of this script is to imitate error reports generated in auto manufacturing enviornments where fasteners are undertorqued. Script will generate a JSON formatted object of all vehicles completed, and a SQLite DB.
 

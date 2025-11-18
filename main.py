@@ -1,4 +1,7 @@
-import startProdLine
+import production, os
+
+if os.path.exists("./completedCars.db"):
+     os.remove("./completedCars.db")
 
 vinCount = int(input("How many cars are we making?: ")) + 1
 
@@ -7,4 +10,4 @@ while vinCount <= 0:
      vinCount = int(input("How many cars?: ")) + 1
 
 
-startProdLine.startProdLine(vinCount)
+production.startProdLine(vinCount)

@@ -1,6 +1,6 @@
 import checkTorqueValues
 import globals
-import random, time
+import random
 
 
 def startProdLine(vinCount):
@@ -11,16 +11,15 @@ def startProdLine(vinCount):
     torqueValues = []
 
     for i in range(1, vinCount):
-            print("Building in Progress..")
-            #time.sleep(.7)
-
             for j in range(1, 8):
-                boltK = float(globals.bugValues[random.randint(0,4)])
+                boltK = float(globals.bugValues[random.randint(0,(len(globals.bugValues)-1))])
+
                 force = finalTorque / (boltK * boltD)
                 torqueValues.append(f"Bolt {j}:" f" {int(force)}")
 
             globals.completedCarsUnfused[f"VIN: {i}"] = {"torqueValues" : torqueValues.copy()}
             torqueValues.clear()
+
     vin = vin + 1
 
     checkTorqueValues.checkTorqueValues()
