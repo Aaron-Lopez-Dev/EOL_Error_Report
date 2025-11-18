@@ -1,4 +1,6 @@
-### Main purpose of this script is to imitate error reports generated in auto manufacturing enviornments where fasteners are undertorqued. Script will generate a JSON formatted object of all vehicles completed, and, will create a SQLite DB.
+# EOL Error Report:
+
+### Main purpose of this script is to imitate error reports generated in auto manufacturing enviornments where fasteners are undertorqued. Script will generate a JSON formatted object of all vehicles completed, and a SQLite DB.
 
 ## Created Using:
 - Python
@@ -6,16 +8,16 @@
 
 ### Clone repository to your local machine
 
-    ``git clone https://github.com/Aaron-Lopez-Dev/Mock_Factory.git``
+    git clone https://github.com/Aaron-Lopez-Dev/Mock_Factory.git
 
 ### Navigate to directory where repo was cloned and Create a Python Virtual Enviornment
 
-    `python3 -m venv venv`
+    python3 -m venv venv
 
 ### Activate Enviornment
 
-    `source venv/bin/activate`
+    source venv/bin/activate
 
 ### Run Main Script
 
-    `python3 ./main.py`
+    python3 ./main.py
