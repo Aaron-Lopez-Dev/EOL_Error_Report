@@ -10,8 +10,8 @@ def createDatabase():
     c.execute('''
         CREATE TABLE IF NOT EXISTS vehicles (
             vin TEXT PRIMARY KEY,
-            completed TEXT,
-            errors TEXT,
+            completed INT,
+            errors INT,
             torque_values TEXT)  ;         
     ''')
 
@@ -21,12 +21,12 @@ def createDatabase():
     '''
     updateColumnError = '''
     UPDATE vehicles
-    SET completed = FALSE, errors = TRUE
+    SET completed = 0, errors = 1
     WHERE vin = :vin;
     '''
     updateColumnCompleted = '''
     UPDATE vehicles
-    SET completed = TRUE, errors = FALSE
+    SET completed = 1, errors = 0
     WHERE vin = :vin;
     '''
     for i, data in globals.completedCarsUnfused.items():
